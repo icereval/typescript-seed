@@ -1,0 +1,33 @@
+server:
+    host: $SERVER_HOST
+    port: $SERVER_PORT
+    routes:
+        cors: true
+
+app:
+    base: $APP_BASE
+    cookie_name: $APP_COOKIE_NAME
+    cookie_secret: $APP_COOKIE_SECRET
+    cookie_expiration: 30  # days
+    encryption_password: $APP_ENCRYPTION_PASSWORD
+
+api:
+    base: $API_BASE
+
+logging:
+    console:
+        level: debug
+        prettyPrint: true
+        colorize: true
+        silent: false
+        timestamp: true
+        # humanReadableUnhandledException: true
+        # handleExceptions: true
+
+APP_BASE: http://$SERVER_HOST:$SERVER_PORT
+APP_COOKIE_NAME: test
+APP_COOKIE_SECRET: password-should-be-32-characters
+APP_ENCRYPTION_PASSWORD: password-for-encrypted-data
+API_BASE: http://$SERVER_HOST:$SERVER_PORT
+SERVER_HOST: localhost
+SERVER_PORT: 5000
