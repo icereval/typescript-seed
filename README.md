@@ -32,7 +32,7 @@ Local Server: http://localhost:5000/
 Endpoint|Method|URI
 --- | --- | ---
 Login | `POST` | `/login`
-Login | `DELETE` | `/logout`
+Logout | `DELETE` | `/logout`
 Sign Up | `POST` | `/signup`
 Show User Info | `GET` | `/users/{id}`
 Show My User Info | `GET` | `/users/me`
